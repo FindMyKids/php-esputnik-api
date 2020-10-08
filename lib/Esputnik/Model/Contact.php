@@ -107,7 +107,7 @@ class Contact
      */
     public function addField(Field $fields)
     {
-        $this->fields = $fields;
+        $this->fields[] = $fields;
     }
 
     /**

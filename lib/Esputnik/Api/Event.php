@@ -2,12 +2,13 @@
 
 namespace Esputnik\Api;
 
+use Esputnik\Model\Event as EventModel;
 use Esputnik\Exception\RuntimeException;
 
 class Event extends AbstractApi
 {
-    public function add()
+    public function add(EventModel $event)
     {
-        throw new RuntimeException('This method is not realized yet');
+        return $this->post('event/', $event);
     }
 }
